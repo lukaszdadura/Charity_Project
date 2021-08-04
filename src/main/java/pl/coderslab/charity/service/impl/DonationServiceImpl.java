@@ -32,4 +32,9 @@ public class DonationServiceImpl implements DonationService {
         }
         return counter;
     }
+
+    @Override
+    public void addDonation(Donation donation) {
+        donationRepo.save(donation);
+    }
 }

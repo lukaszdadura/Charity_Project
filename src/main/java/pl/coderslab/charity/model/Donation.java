@@ -23,7 +23,6 @@ public class Donation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotEmpty
     private Integer quantity;
     @ManyToMany
     private List<Category> categories;

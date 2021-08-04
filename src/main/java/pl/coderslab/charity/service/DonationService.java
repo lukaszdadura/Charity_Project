@@ -8,5 +8,6 @@ public interface DonationService {
 
     public List<Donation> findAllDonations();
     public int donationsQuantity();
+    void addDonation(Donation donation);
 
 }
